@@ -1,0 +1,18 @@
+body {
+  font-family: Century Gothic;
+  background-color: rgb(47, 46, 46);
+  color: aliceblue;
+}
+
+#task {
+  width: 200px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
