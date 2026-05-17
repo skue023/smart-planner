@@ -1,4 +1,4 @@
-* 1. Smart Daily Planner
+1. Smart Daily Planner
 
 A web app where users can:
 - create tasks
