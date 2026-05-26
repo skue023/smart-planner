@@ -1,13 +1,18 @@
-const task = document.getElementById("task");
+const input = document.getElementById("input");
 const taskList = document.getElementById("task-list");
+const tasks = [];
 
-task.addEventListener("keypress", function (e) {
+input.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
-    const taskText = task.value.trim();
+    const taskText = input.value.trim();
     if (taskText === "") {
       return;
     } else {
-      taskList.innerHTML += `<li class=".task-item">${taskText}</li>`;
+      const taskItem = document.createElement("li");
+      taskItem.textContent = taskText;
+      taskItem.classList.add("task-item");
+      taskList.appendChild(taskItem);
+      tasks.push(taskText);
     }
   }
 });
